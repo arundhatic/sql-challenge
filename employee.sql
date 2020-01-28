@@ -18,7 +18,8 @@ CREATE TABLE Public."employees" (
 
 SELECT * FROM Public."employees";
 
-COPY Public."employees" FROM '/Users/arun/Projects/sql-challenge/EmployeeSQL/Resources/employees.csv'
+-- workaround for pgAdmin on Mac
+COPY Public."employees" FROM '/sql-challenge/Resources/employees.csv'
 DELIMITER ',' CSV HEADER;
 
 CREATE TABLE Public."departments" (
@@ -29,7 +30,8 @@ CREATE TABLE Public."departments" (
 
 SELECT * FROM Public."departments";
 
-COPY Public."departments" FROM '/Users/arun/Projects/sql-challenge/EmployeeSQL/Resources/departments.csv'
+-- workaround for pgAdmin on Mac
+COPY Public."departments" FROM '/sql-challenge/Resources/departments.csv'
 DELIMITER ',' CSV HEADER;
 
 CREATE TABLE Public."salaries" (
@@ -42,7 +44,8 @@ CREATE TABLE Public."salaries" (
 
 SELECT * FROM Public."salaries";
 
-COPY Public."salaries" FROM '/Users/arun/Projects/sql-challenge/EmployeeSQL/Resources/salaries.csv'
+-- workaround for pgAdmin on Mac
+COPY Public."salaries" FROM '/sql-challenge/Resources/salaries.csv'
 DELIMITER ',' CSV HEADER;
 
 CREATE TABLE Public."titles" (
@@ -55,7 +58,8 @@ CREATE TABLE Public."titles" (
 
 SELECT * FROM Public."titles";
 
-COPY Public."titles" FROM '/Users/arun/Projects/sql-challenge/EmployeeSQL/Resources/titles.csv'
+-- workaround for pgAdmin on Mac
+COPY Public."titles" FROM '/sql-challenge/Resources/titles.csv'
 DELIMITER ',' CSV HEADER;
 
 CREATE TABLE Public."dept_employee" (
@@ -69,7 +73,7 @@ CREATE TABLE Public."dept_employee" (
 
 SELECT * FROM Public."dept_employee";
 
-COPY Public."dept_employee" FROM '/Users/arun/Projects/sql-challenge/EmployeeSQL/Resources/dept_emp.csv'
+COPY Public."dept_employee" FROM '/sql-challenge/Resources/dept_emp.csv'
 DELIMITER ',' CSV HEADER;
 
 CREATE TABLE Public."dept_manager" (
@@ -83,7 +87,7 @@ CREATE TABLE Public."dept_manager" (
 
 SELECT * FROM Public."dept_manager";
 
-COPY Public."dept_manager" FROM '/Users/arun/Projects/sql-challenge/EmployeeSQL/Resources/dept_manager.csv'
+COPY Public."dept_manager" FROM '/sql-challenge/Resources/dept_manager.csv'
 DELIMITER ',' CSV HEADER;
 
 --List the following details of each employee: employee number, last name, first name, gender, and salary.
